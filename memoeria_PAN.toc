@@ -1,0 +1,20 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{3}{section.1}%
+\contentsline {section}{\numberline {2}Snowden y vigilancia masiva (NSA, PRISM)}{3}{section.2}%
+\contentsline {section}{\numberline {3}Casos de reidentificación de datos en EE.UU. y Europa}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Caso Netflix (EE.UU., 2006-2008)}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Caso de datos de movilidad en Europa (2013)}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Caso de datos médicos del NHS Reino Unido (2017)}{4}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Lecciones técnicas para la Privacidad desde el Diseño}{4}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Google Spain vs. AEPD (TJUE, derecho al olvido)}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Antecedentes y contexto del caso}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Cuestiones jurídicas fundamentales}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}La sentencia del TJUE (13 de mayo de 2014)}{5}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Responsabilidad de los motores de búsqueda}{5}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Nacimiento del derecho al olvido digital}{6}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Aplicabilidad extraterritorial}{6}{subsubsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.4}Impacto y consecuencias}{6}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Implicaciones para la Privacidad desde el Diseño}{7}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Apple vs. FBI (cifrado y puertas traseras)}{7}{section.5}%
+\contentsline {section}{Referencias Bibliográficas}{7}{section.5}%
+\contentsline {section}{Referencias}{7}{section.5}%
