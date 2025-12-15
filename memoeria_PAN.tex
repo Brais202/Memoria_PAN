@@ -9,8 +9,8 @@
 \usepackage{setspace}
 \usepackage[nottoc]{tocbibind}
 \usepackage{csquotes}
+\usepackage{xurl}
 \usepackage{hyperref}
-
 \geometry{a4paper, margin=2.5cm, headheight=15pt}
 \setstretch{1.3}
 
@@ -33,13 +33,12 @@
 		\vspace*{3cm}
 		{\Huge\bfseries Privacidad desde el Diseño \\ Jurisprudencia y Casos Emblemáticos \par}
 		\vspace{1.5cm}
-		{\large Trabajo Académico \par}
-		\vspace{0.5cm}
+
 		{\large Asignatura: Privacidad y Anonimidad \par}
 		\vspace{0.5cm}
 		{\large Máster en Ciberseguridad \par}
 		\vspace{2cm}
-		{\large Autor: [Tu Nombre] \par}
+		{\large Autores: \\ Estela Pillo González \\ Brais Gómez Espiñeira \\ Álvaro Caínzos Urtiaga \par}
 		\vspace{0.5cm}
 		{\large Fecha: \today \par}
 		\vfill
@@ -68,8 +67,8 @@
 	El núcleo de la controversia se centró en la recopilación a granel (\textit{bulk collection}) de metadatos: información no de contenido (lo que se dice), sino sobre la comunicación (número de origen, destino, hora y duración). El Grupo de Revisión desmanteló la tesis de su inocuidad:
 	
 	\begin{itemize}
-		\item \textbf{Violación de la Privacidad:} El informe concluyó que la colección masiva, al ser almacenada por hasta cinco años, generaba riesgos para la confianza pública y la privacidad personal. El metadato, una vez analizado, revela una \textbf{"gran cantidad de detalles"} sobre las "asociaciones familiares, políticas, profesionales, religiosas y sexuales" del individuo.
-		\item \textbf{Fallas Operacionales:} El programa presentó \textbf{"problemas de cumplimiento serios y persistentes"} (\textit{noncompliance}). Se documentaron casos donde las búsquedas en la base de datos masiva se realizaban sin el estándar legal de sospecha requerido, afectando a la legalidad del programa.
+		\item \textbf{Violación de la Privacidad:} El informe concluyó que la colección masiva, al ser almacenada por hasta cinco años, generaba riesgos para la confianza pública y la privacidad personal. El metadato, una vez analizado, revela una \textbf{``gran cantidad de detalles''} sobre las ``asociaciones familiares, políticas, profesionales, religiosas y sexuales'' del individuo.
+		\item \textbf{Fallas Operacionales:} El programa presentó \textbf{``problemas de cumplimiento serios y persistentes''} (\textit{noncompliance}). Se documentaron casos donde las búsquedas en la base de datos masiva se realizaban sin el estándar legal de sospecha requerido, afectando a la legalidad del programa.
 	\end{itemize}
 	
 	\subsection{Las Demandas de Reforma y la Minimización de Datos}
@@ -87,7 +86,7 @@
 	El legado final de las revelaciones se resume en el principio que el informe adoptó:
 	
 	\begin{quote}
-		El gobierno no debe tener permitido \textbf{"recopilar y almacenar de forma masiva, sin digerir, información personal no pública sobre personas estadounidenses"}.
+		El gobierno no debe tener permitido \textbf{``recopilar y almacenar de forma masiva, sin digerir, información personal no pública sobre personas estadounidenses''}.
 	\end{quote}
 	
 	
@@ -107,7 +106,7 @@
 	
 	\subsection{Caso de datos médicos del NHS Reino Unido (2017)}
 	
-	El sistema de salud público británico (NHS) compartió datos de pacientes con Google DeepMind para proyectos de investigación médica. Aunque los datos estaban "pseudonimizados" (es decir, reemplazaron identificadores directos por códigos), unos investigadores encontraron puntos débiles importantes. Usando algoritmos de aprendizaje automático, demostraron que combinando solo tres datos comunes ---código postal, fecha de nacimiento y género--- ya se podía volver a identificar a personas en grandes bases de datos médicas.
+	El sistema de salud público británico (NHS) compartió datos de pacientes con Google DeepMind para proyectos de investigación médica. Aunque los datos estaban ``pseudonimizados'' (es decir, reemplazaron identificadores directos por códigos), unos investigadores encontraron puntos débiles importantes. Usando algoritmos de aprendizaje automático, demostraron que combinando solo tres datos comunes ---código postal, fecha de nacimiento y género--- ya se podía volver a identificar a personas en grandes bases de datos médicas.
 	
 	Este ejemplo nos recuerda por qué el GDPR considera los datos de salud como especialmente sensibles, y nos hace ver que necesitamos técnicas de protección mucho más sólidas que la simple sustitución de identificadores.
 	
@@ -116,13 +115,13 @@
 	De todos estos casos, podemos sacar algunas conclusiones clave:
 	
 	\begin{enumerate}
-		\item \textbf{La anonimización no es algo absoluto:} No existe eso de "datos completamente anónimos", sino diferentes niveles de riesgo que tenemos que evaluar constantemente.
+		\item \textbf{La anonimización no es algo absoluto:} No existe eso de ``datos completamente anónimos'', sino diferentes niveles de riesgo que tenemos que evaluar constantemente.
 		
 		\item \textbf{Somos más únicos de lo que pensamos:} Casi cualquier conjunto de datos detallado contiene combinaciones de atributos que son específicas de cada persona.
 		
 		\item \textbf{Las técnicas tradicionales tienen límites:} Métodos como la k-anonimidad, que aseguran que cada registro sea similar a otros varios, pueden fallar cuando alguien cruza los datos con información adicional.
 		
-		\item \textbf{Necesitamos técnicas más avanzadas:} Enfoques como el \textit{diferencial de privacidad}, que añade cierto "ruido" matemático controlado a los datos, ofrecen garantías de privacidad mucho más sólidas \cite{dwork2008}.
+		\item \textbf{Necesitamos técnicas más avanzadas:} Enfoques como el \textit{diferencial de privacidad}, que añade cierto ``ruido'' matemático controlado a los datos, ofrecen garantías de privacidad mucho más sólidas \cite{dwork2008}.
 	\end{enumerate}
 	
 	\section{Google Spain vs. AEPD (TJUE, derecho al olvido)}
@@ -143,7 +142,7 @@ El Tribunal de Justicia de la Unión Europea tuvo que abordar tres cuestiones fu
 	
 	\subsubsection{Responsabilidad de los motores de búsqueda}
 	
-	El TJUE determinó que lo que hace un motor de búsqueda ---recolectar, indexar, almacenar y mostrar información personal--- sí cuenta como "tratamiento de datos". Esto significa que Google no era un simple intermediario técnico, sino responsable de lo que hacía con esos datos.
+	El TJUE determinó que lo que hace un motor de búsqueda ---recolectar, indexar, almacenar y mostrar información personal--- sí cuenta como ``tratamiento de datos''. Esto significa que Google no era un simple intermediario técnico, sino responsable de lo que hacía con esos datos.
 	
 	\subsubsection{Nacimiento del derecho al olvido digital}
 	
@@ -163,9 +162,9 @@ El Tribunal de Justicia de la Unión Europea tuvo que abordar tres cuestiones fu
 	
 \subsection{Impacto y consecuencias}
 
-La sentencia del TJUE tuvo consecuencias muy prácticas e inmediatas. Tras conocerse el fallo, Google no tardó en poner en marcha un formulario específico para que los ciudadanos europeos pudieran solicitar la eliminación de enlaces a información personal. Si miramos las cifras, el impacto fue enorme: en apenas cinco años, la compañía recibió peticiones para borrar más de 3,5 millones de URLs, de las cuales aceptaron alrededor del 45\%. Esto nos muestra que el "derecho al olvido" no era una mera idea teórica, sino una demanda social real y palpable.
+La sentencia del TJUE tuvo consecuencias muy prácticas e inmediatas. Tras conocerse el fallo, Google no tardó en poner en marcha un formulario específico para que los ciudadanos europeos pudieran solicitar la eliminación de enlaces a información personal. Si miramos las cifras, el impacto fue enorme: en apenas cinco años, la compañía recibió peticiones para borrar más de 3,5 millones de URLs, de las cuales aceptaron alrededor del 45\%. Esto nos muestra que el ``derecho al olvido'' no era una mera idea teórica, sino una demanda social real y palpable.
 
-A nivel normativo, el camino que abrió este caso fue decisivo. El principio que estableció el Tribunal se materializó y amplió en el **Reglamento General de Protección de Datos (GDPR)** de 2018, donde quedó consagrado como el "derecho de supresión" en su artículo 17. El GDPR no solo recogió el testigo, sino que fue más allá, definiendo con mayor precisión las condiciones para ejercer este derecho y reforzando significativamente las obligaciones de todas las empresas y organizaciones que manejan nuestros datos personales.
+A nivel normativo, el camino que abrió este caso fue decisivo. El principio que estableció el Tribunal se materializó y amplió en el **Reglamento General de Protección de Datos (GDPR)** de 2018, donde quedó consagrado como el ``derecho de supresión'' en su artículo 17. El GDPR no solo recogió el testigo, sino que fue más allá, definiendo con mayor precisión las condiciones para ejercer este derecho y reforzando significativamente las obligaciones de todas las empresas y organizaciones que manejan nuestros datos personales.
 
 Sin embargo, a pesar de estos avances, la sentencia dejó al descubierto y sin resolver una serie de tensiones fundamentales. El debate sigue vivo hoy entre el derecho a nuestra privacidad y el derecho colectivo a estar informados; entre la protección de datos personales y el interés público periodístico o histórico; y entre la soberanía normativa de Europa y la naturaleza global y sin fronteras de Internet. Estos dilemas no tienen una respuesta fácil, y su resolución sigue siendo uno de los grandes retos del mundo digital en el que vivimos.
 	
@@ -181,12 +180,65 @@ Sin embargo, a pesar de estos avances, la sentencia dejó al descubierto y sin r
 	\end{enumerate}
 	
 	\section{Apple vs. FBI (cifrado y puertas traseras)}
-	
 
+	\subsection{Antecedentes: El atentado de San Bernardino y el iPhone bloqueado}
 	
-	\section*{Referencias Bibliográficas}
-	\addcontentsline{toc}{section}{Referencias Bibliográficas}
+	El 2 de diciembre de 2015 se produjo un atentado en San Bernardino (California). Durante la investigación, el FBI recuperó un iPhone 5C utilizado por uno de los atacantes. El dispositivo estaba protegido por un PIN de cuatro dígitos y configurado para borrar sus datos tras diez intentos fallidos, lo que hacía muy arriesgada cualquier estrategia de fuerza bruta y dificultaba el acceso al contenido almacenado \cite{wikiAppleFBI}.
 	
+	Apple, en un primer momento, colaboró proporcionando los datos de las copias de seguridad existentes en iCloud, pero estas no contenían información reciente relevante para la investigación. Con el objetivo de intentar obtener una copia de seguridad más actual, se restableció la contraseña de iCloud asociada a la cuenta, lo que tuvo el efecto colateral de impedir el auto-backup del dispositivo hasta que la nueva contraseña se introdujese de nuevo en el propio teléfono, algo imposible mientras siguiera bloqueado \cite{wikiAppleFBI}.
+	
+	Esta situación llevó al FBI a solicitar una intervención más profunda por parte de Apple, desencadenando un conflicto legal de alcance global sobre los límites del cifrado, la privacidad y la seguridad nacional.
+	
+	
+	\subsection{La petición del FBI y el fundamento legal}
+	En febrero de 2016, ante la imposibilidad de acceder al teléfono con las herramientas habituales, el Gobierno solicitó una orden al amparo de la \textbf{All Writs Act}, que permite a los tribunales federales dictar órdenes ``necesarias o apropiadas'' para apoyar su jurisdicción cuando no existe un mecanismo legal específico para el caso. Esta orden exigía a Apple una ``ayuda técnica razonable'' \cite{wikiAppleFBI}. 
+	
+	Esta ayuda consistía específicamente en crear y firmar una versión especial del sistema operativo iOS, popularmente conocida como \textit{«GovtOS»}. Este software habría permitido:
+	\begin{itemize}
+		\item Desactivar las funciones de seguridad que borraban los datos tras múltiples intentos fallidos.
+		\item Permitir introducir código por puerto físico, Wi-Fi, Bluetooth u otros medios.
+		\item Eliminar los retardos entre intentos, para acelerar la prueba masiva de contraseñas.
+	\end{itemize}
+	
+	La solicitud equivalía, en la práctica, a la creación de una ``puerta trasera'' (\textit{backdoor}) a medida. Aunque la orden indicaba que el software podría limitarse a un único dispositivo, el debate público se centró en la idea de que se trataba de una ``llave maestra'' reutilizable o replicable.
+	
+	\subsection{La respuesta de Apple y el debate público}
+	
+	Apple se opuso de manera rotunda y pública a la orden judicial. En una carta pública dirigida a sus clientes, Tim Cook (CEO en esos momentos) argumentó que el Gobierno estaba solicitando, en la práctica, la creación de una \textbf{puerta trasera} que debilitaría la seguridad de los usuarios, incluso si se afirmaba que se usaría solo ``una vez'' \cite{wiredCook2019}.
+	
+	La postura de la empresa se basaba en varios principios clave:
+	\begin{enumerate}
+		\item \textbf{Precedente peligroso:} Acceder a la petición sentaría un precedente legal que permitiría a gobiernos de todo el mundo exigir la debilitación de la seguridad de los productos tecnológicos.
+		\item \textbf{No existe una puerta trasera solo para los ``buenos'':} Una herramienta creada para el FBI podría ser robada, filtrada o replicada, poniendo en riesgo la seguridad de todos los usuarios de Apple.
+		\item \textbf{Privacidad por diseño:} El cifrado fuerte de extremo a extremo es una característica central del diseño de sus productos. Debilitarlo iría en contra de su compromiso con la privacidad del usuario, la cual no se podría garantizar en este caso.
+	\end{enumerate}
+	
+	El caso generó un amplio debate y una tensión entre la seguridad pública y los derechos digitales. Mientras las agencias de seguridad defendían la necesidad de acceder a dispositivos en investigaciones críticas, distintas empresas tecnológicas (Google, Microsoft, Facebook), respaldaron a Apple, advirtiendo sobre los riesgos de deteriorar el cifrado para la sociedad digital \cite{eff2016}.
+	
+	\subsection{Resolución del conflicto: desbloqueo por un tercero y archivo del caso (marzo de 2016)}
+	
+	En marzo de 2016, el Gobierno solicitó aplazar la vista al informar de que un tercero había demostrado una posible forma de desbloquear el iPhone. Justo un día antes de la vista programada, el FBI retiró su solicitud contra Apple, anunciando que había logrado desbloquear el iPhone sin su ayuda \cite{wikiAppleFBI}.
+	
+	Reportes posteriores identificaron a \textbf{Azimuth Security} (empresa de ciberseguridad australiana) como el proveedor de la técnica utilizada para acceder al iPhone, la cual tuvo un coste alrededor del millón de dólares\cite{vergeCost2016}. El método consistió en una serie de \textit{exploits} que permitieron evitar las protecciones contra fuerza bruta, en concreto para evitar el borrado tras intentos fallidos y así automatizar la prueba de códigos de acceso \cite{vergeCondor2021,nineToFiveCondor2021}.
+	
+	Una vez obtenido el acceso, se reportó que el iPhone no contenía datos relevantes para la investigación del atentado. Este hecho puso en cuestión la necesidad de la extrema medida legal que se había intentado forzar \cite{vergeCondor2021}.
+	
+	\subsection{Implicaciones para la Privacidad desde el Diseño}
+	
+	Desde la perspectiva de Privacidad desde el Diseño, Apple vs. FBI es un caso emblemático por tres motivos:
+	
+	\begin{enumerate}
+		\item \textbf{Cifrado como garantía estructural no negociable:} Apple defendió que la integridad del cifrado no es una característica opcional, sino la base de la confianza digital. Desarrollar el backdoor hubiera significado aceptar que la arquitectura de seguridad puede ser debilitada bajo coerción, lo cual es incompatible con la privacidad robusta\cite{wiredCook2019}.
+		
+		\item \textbf{Límites del poder estatal en la era digital:} Se demostró que las leyes centenarias, como la \textit{All Writs Act}, son herramientas contundentes y potencialmente inadecuadas para regular tecnologías complejas que afectan a la seguridad de millones de personas en todo el mundo\cite{wikiAppleFBI}.
+		
+		\item \textbf{El mercado de vulnerabilidades como factor del debate:} La resolución mostró que los gobiernos pueden recurrir al mercado de vulnerabilidades. Esta realidad plantea un dilema ético y de seguridad: ¿es preferible que los estados compren y acumulen exploits secretos en lugar de exigir puertas traseras legales? Ambas opciones conllevan riesgos importantes para la seguridad de la información\cite{vergeCost2016}.
+	\end{enumerate}
+	
+	En conclusión, este caso evidenció que la privacidad depende cada vez más de decisiones de arquitectura: si se debilita el cifrado una vez, se debilita para todos. Aunque el caso se archivó sin sentencia, dejó planteado un debate vigente actualmente: o se normalizan puertas traseras, o se acepta que los Estados recurran a vulnerabilidades adquiridas en mercados externos para acceder a dispositivos. En ambos escenarios, la \textit{Privacidad desde el Diseño} aparece como la defensa más robusta.
+	
+	\newpage
+
 	\begin{thebibliography}{99}
 		\bibitem{narayanan2008}
 		Narayanan, A. y Shmatikov, V. (2008). \emph{Robust de-anonymization of large sparse datasets}. En 2008 IEEE Symposium on Security and Privacy (pp. 111-125). DOI: 10.1109/SP.2008.33.
@@ -205,6 +257,32 @@ Sin embargo, a pesar de estos avances, la sentencia dejó al descubierto y sin r
 		
 		\bibitem{revollo2017}
 		Revollo Fernández, D. (2017). \emph{El derecho al olvido en Internet a la luz de la jurisprudencia del Tribunal de Justicia de la Unión Europea: el caso Google Spain}. Opinión Jurídica, 16(31), 79-99. DOI: 10.22395/ojum.v16n31a4.
+		
+		        \bibitem{eff2016}
+		Electronic Frontier Foundation (EFF). (2016). \emph{Apple Challenges FBI: All Writs Act Order (CA)}.
+		Disponible en: \url{https://www.eff.org/cases/apple-challenges-fbi-all-writs-act-order}.
+		
+		
+		\bibitem{wikiAppleFBI}
+		Wikipedia (s.f.). \emph{Apple--FBI encryption dispute}. Wikipedia.
+		Disponible en: \url{https://en.wikipedia.org/wiki/Apple%E2%80%93FBI_encryption_dispute}.
+		
+		\bibitem{wiredCook2019}
+		Kahney, L. (2019, 16 de abril). \emph{The FBI Wanted a Backdoor to the iPhone. Tim Cook Said No}. WIRED.
+		Disponible en: \url{https://www.wired.com/story/the-time-tim-cook-stood-his-ground-against-fbi/}.
+		
+		\bibitem{vergeCost2016}
+		Brandom, R. (2016, 27 de abril). \emph{The FBI bought an iPhone hack, but not the right to tell anyone how it works}. The Verge.
+		Disponible en: \url{https://www.theverge.com/2016/4/27/11518754/fbi-apple-iphone-hack-vulnerability-disclosure-vep}.
+		
+		\bibitem{vergeCondor2021}
+		Clark, M. (2021, 14 de abril). \emph{Here’s how the FBI managed to get into the San Bernardino shooter’s iPhone}. The Verge.
+		Disponible en: \url{https://www.theverge.com/2021/4/14/22383957/fbi-san-bernadino-iphone-hack-shooting-investigation}.
+		
+		\bibitem{nineToFiveCondor2021}
+		Potuck, M. (2021, 14 de abril). \emph{Report reveals how little-known ‘Azimuth Security’ cracked the iPhone in the San Bernardino FBI case}. 9to5Mac.
+		Disponible en: \url{https://9to5mac.com/2021/04/14/report-reveals-how-little-known-azimuth-security-cracked-the-iphone-in-the-san-bernardino-fbi-case/}.
+		
 	\end{thebibliography}
 	
 \end{document}
